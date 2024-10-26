@@ -22,6 +22,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /*Adds 8px vertical padding and 24px horizontal padding to the buttons underneath the input bar*/
+  padding: 8px 24px;
 }
 
 input {
@@ -68,6 +70,8 @@ a
   align-items: center;
   /*sets the flex direction of the items within the content class to be column so the items are placed on top of each other*/
   flex-direction: column;
+  /*adds a 16px gap between each item within the content class*/
+  gap: 16px;
 }
 
 /*footer class for modifying the content at the bottom of the page*/
