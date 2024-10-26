@@ -5,8 +5,11 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /*Sets the display method of the body to use the flex system*/
   display: flex;
+  /*sets the flex direction to a column so the contents of the page are displayed from the top to the botton*/
   flex-direction: column;
+  /*spaces the content of the body to be spaced as far apart as possible from each other based on the flex direction*/
   justify-content: space-between;
 }
 
@@ -28,50 +31,78 @@ input {
   width: 400px;
 }
 
+/*uses the ul selector to modify unordered list elements*/
 ul {
+  /*sets the display method of the unordered lists to flex*/
   display: flex;
+  /*removes the bullet points*/
   list-style: none;
 }
 
+/*selector for hyperlinks*/
 a
 {
+  /*removes the text decoration from all hyperlinks on the page*/
   text-decoration: none;
 }
 
+/*header class for modifying the content designed to be at the top of the page*/
 .header
 {
+  /*sets display method to flex*/
   display: flex;
+  /*pushes the contents of the header as far apart from each other as possible horizontally since the flex direction is default to row*/
   justify-content: space-between;
+  /*aligns the header class and all of its contents to the top of the screen based on the flex direction of the body*/
   align-items: flex-start;
+  /*places padding around the contents of the header class*/
   padding: 10px;
 }
 
+/*content class for modifying the image, buttons, and input bar*/
 .content
 {
+  /*sets the display method of the content to flex*/
   display: flex;
+  /*aligns the items to the center of the page*/
   align-items: center;
+  /*sets the flex direction of the items within the content class to be column so the items are placed on top of each other*/
   flex-direction: column;
 }
 
+/*footer class for modifying the content at the bottom of the page*/
 .footer
 {
+  /*sets display method of the footer to flex*/
   display: flex;
+  /*spaces the content as far apart as possible horizontally*/
   justify-content: space-between;
+  /*pushes the footer content to the bottom of the page*/
   align-items: flex-end;
+  /*sets the background color of the footer to a grey color*/
   background-color: #eeeeee;
+  /*adds padding to the contents of the footer class*/
   padding: 10px;
 }
 
+/*creates a class to modify the links on the lefthand side of the footer and header*/
 .left-links
 {
+  /*sets the display method of the lefthand links to flex*/
   display: flex;
+  /*places a 16px gap between lefthand links*/
   gap: 16px;
+  /*removes the padding of all links on the lefthand side*/
   padding: 0;
 }
 
+/*creates a class to modify the links on the righthand side of the footer and header*/
 .right-links
 {
+  /*sets the display method of the righthand links to flex*/
   display: flex;
+  /*places a 16px gap between righthand links*/
   gap: 16px;
+  /*removes the padding of all links on the righthand side*/
   padding: 0;
 }
